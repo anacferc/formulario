@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Livros</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body id="pagina">
+    <h1 id="titulo">Formulário para Amantes de Leitura</h1>
+    <form action="https://www.skoob.com.br/usuario/7890766-anacarolisfc"  target="_blank" method="post" id="formulario" class="campo"> <!--post: vou enviar até o banco de dados -->
+        <!-- target="_blank: renderiza para outra página" -->
+        <label for="nome">Nome ou Apelido: </label>
+        <input type="text" id="nome" name="nome"class="campo"> 
+        
+        <!-- estrutura de múltipla escolha -->
+        <label class="rotulo">Gênero Literário</label>
+        <select name="genero" id="genero">
+            <option value="selecione">Selecione</option>
+            <option value="religioso">Religioso</option>
+            <option value="autoajuda">Autoajuda</option>
+            <option value="fantasia">Fantasia</option>
+            <option value="distopia">Distopia</option>
+            <option value="romance">Romance</option>
+            <option value="suspense">Suspense</option>
+            <option value="misterio">Mistério</option>
+            <option value="crime">Crime</option>
+            <option value="aventura">Aventura</option>
+        </select>
+
+        <!-- estrutura de múltipla escolha -->
+        <label class="rotulo">Autores Favoritos</label>
+        <select name="autor" id="autor">
+            <option value="selecione">Selecione</option>
+            <option value="machado">Machado de Assis</option>
+            <option value="guimaraes">Guimarães Rosa</option>
+            <option value="clarice">Clarice Lispector</option>
+            <option value="carlos">Carlos Drummond</option>
+            <option value="conceicao">Conceição Evaristo</option>
+            <option value="raquel">Raquel de Queiroz</option>
+            <option value="manuel">Manuel Bandeira</option>
+        </select>
+
+        <!-- SELECIONAR UMA OPÇÃO-->
+        <label for="livro" class="rotulo">Livro Favorito</label>
+        <input type="text" id="livro" name="livro" class="campo">
+
+        <label for="avaliação" class="rotulo">Avaliação do Livro: </label>
+        <div class="stars">
+            <input type="radio" name="rating" id="star5" value="5">
+            <label for="star5">★</label>
+            <input type="radio" name="rating" id="star4" value="4">
+            <label for="star4">★</label>
+            <input type="radio" name="rating" id="star3" value="3">
+            <label for="star3">★</label>
+            <input type="radio" name="rating" id="star2" value="2">
+            <label for="star2">★</label>
+            <input type="radio" name="rating" id="star1" value="1">
+            <label for="star1">★</label>
+          </div>
+          
+        <button type="button" id="botaoenviar">Enviar ♡</button>
+
+        <div>
+            <p id="paragrafo">Me siga no Skoob! ♡ ♡ ♡</p>
+            <button type="submit" id="botao" >SKOOB</button>
+        </div>
+    </form>
+</body>
+</html>
+
+<!-- <input type="file" id="file" name="file" class="campo" accept="">
+accept: especifica qual tipo de arquivo vai aceitar -->

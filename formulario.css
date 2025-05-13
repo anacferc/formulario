@@ -1,0 +1,104 @@
+#pagina{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-image: url(fotos/Library\ Animation\ Background.jpeg);
+    background-size: cover;
+    height: 100%;
+}
+
+#titulo{
+    text-align: center;
+    color: rgb(222, 184, 135);
+    text-shadow: 0 0 50px rgb(0, 0, 0);
+}
+
+#formulario{
+    background-color: rgb(78, 24, 24);
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+}
+
+.campo{
+    color: rgb(222, 184, 135);
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(44, 32, 32);
+    border: none;
+}
+
+.campo:hover{
+    background-color: rgb(68, 52, 52);
+}
+
+.opcoes{
+    display: flex;
+    gap: 15px;
+}
+
+.rotulo{
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#autor{
+    background-color: rgb(44, 32, 32);
+    color: rgb(222, 184, 135);
+    border: none;
+    border-radius: 10px;
+}
+
+#genero{
+    background-color: rgb(44, 32, 32);
+    color: rgb(222, 184, 135);
+    border: none;
+    border-radius: 10px;
+}
+
+.stars {
+    direction: rtl;
+    display: inline-flex;
+  }
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    font-size: 2rem;
+    color: lightgray;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+    color: rgb(44, 32, 32);
+}
+
+button{
+    background-color: rgb(53, 7, 7);
+    color: white;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+#paragrafo{
+    font-style: italic;
+}
